@@ -1,0 +1,119 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background:rgb(255, 255, 255);
+  color: #1e1e1e;
+  line-height: 1.6;
+}
+
+a {
+  color: #76b0d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 100;
+}
+
+.navbar nav a {
+  color: rgb(255, 255, 255);
+  margin-left: 1.5rem;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  background: #c7c4c4;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  margin-bottom: 1rem;
+}
+
+/* Button */
+.btn-primary {
+  background: rgb(0, 0, 0);
+  color: #fdfbfb;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Sections */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  border-left: 4px solid #104663;
+  padding-left: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: rgb(255, 254, 254);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgb(207, 201, 201);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000000;
+  color: white;
+  font-size: 0.9rem;
+}
